@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Calonge</title>
+  <meta name="description" content="Carlos Calonge, tecnólogo de extensión en Cenipalma.">
+  <style>
+    :root {
+      --bg: #FFF8DC;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #4a4a4a;
+      --line: #e6dcb8;
+      --accent: #0000FF;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #151917;
+        --card: #1d2320;
+        --text: #e9ece9;
+        --muted: #a3aca6;
+        --line: #2e3631;
+        --accent: #7f8cff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    main {
+      width: 100%;
+      max-width: 560px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 40px 36px;
+    }
+
+    .photo {
+      display: block;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 62% 32%;
+      border: 1px solid var(--line);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .role {
+      margin-top: 6px;
+      font-size: 1.125rem;
+      color: var(--muted);
+    }
+
+    .role strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 28px 0;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    .contact a {
+      display: inline-block;
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 1px;
+    }
+
+    .contact a:hover,
+    .contact a:focus-visible {
+      border-bottom-width: 2px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 28px 20px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .photo {
+        width: 96px;
+        height: 96px;
+      }
+
+      .role {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="photo" src="Ccalonge.jpg" alt="Foto de Carlos Calonge" width="120" height="120">
+      <h1>Carlos Calonge</h1>
+      <p class="role">Tecnólogo de extensión en <strong>Cenipalma</strong></p>
+    </header>
+
+    <hr>
+
+    <section>
+      <h2>Lo que hago</h2>
+      <ul>
+        <li>Muestreos foliares</li>
+        <li>Muestreos de suelo</li>
+        <li>Evaluaciones de calidad de cosecha</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section class="contact">
+      <h2>Contacto</h2>
+      <a href="https://www.linkedin.com/in/CCalonge/" target="_blank" rel="noopener noreferrer">LinkedIn: in/CCalonge</a>
+    </section>
+  </main>
+</body>
+</html>
